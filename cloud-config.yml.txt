@@ -1,0 +1,18 @@
+#cloud-config
+
+hostname: rancher
+
+rancher:
+  network:
+    interfaces:
+      eth*:
+       dhcp: false
+      eth0:
+       address: 10.19.71.238/24
+       gateway: 10.19.71.1
+    dns:
+     nameservers:
+      - 1.1.1.1
+
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDERnxYZAoZkQmhzpSQnxfgWQ3pbRZ1rlgqwmglOWkXjdw6xfbBuK+DuvKwdECDxLrDTtYTC5q899YZ3fFpWtsSdVCAAlzbJimjDERhOVG1pm2FzPS4hOkw5YVpbNuqrv0OvVoK7w6FgH0dMs9EM0ArSuyYioMjrtzpml/jMz4ApsFnZLe29XaVEmNDo3HCvv8dJfGdtS574xF4NGCAeTOOgP1xMRFOpZnOg3hn0JXnuKZiCpfQU64NNr0lxgNwjbmMhLjklUD2jAQbJ5FoVYIxaRcwWpkvKWfNjST/jRcuntLgNAGgkNsOV0UyJIusrXbxrITZRwp53Z/329XEzcaz jfsanchez@Lenov0910
