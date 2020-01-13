@@ -2,7 +2,7 @@
 #set ip on dhcp server based on vm mac address
 #can host name be set by dhcp?
 
-hostname: rancher
+#hostname: rancher
 
 rancher:
   network:
