@@ -1,6 +1,5 @@
 #cloud-config
 #set ip on dhcp server based on vm mac address
-#key is to debian wsl on lenovo
 #can host name be set by dhcp?
 
 hostname: rancher
