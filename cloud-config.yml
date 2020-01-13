@@ -1,15 +1,13 @@
 #cloud-config
-
+#set ip on dhcp server based on vm mac address
+#key is to debian wsl on lenovo
 hostname: rancher
 
 rancher:
   network:
     interfaces:
       eth*:
-       dhcp: false
-      eth0:
-       address: 10.19.71.238/24
-       gateway: 10.19.71.1
+       dhcp: true
     dns:
      nameservers:
       - 1.1.1.1
