@@ -1,5 +1,6 @@
 #cloud-config
-
+#change host name and IP address for new vm's
+#tried setting hostname and ip via dhcp and it did not work
 hostname: rancher
 
 rancher:
